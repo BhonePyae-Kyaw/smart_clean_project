@@ -5,7 +5,7 @@ export default function ShopHome() {
   return (
     <div>
         Shop Home
-        <div>
+        <div className='sh-ctsbtm'>
             <button><Link to="/shop/customerOrder">Customer Orders</Link></button>
         </div>
         <div>
