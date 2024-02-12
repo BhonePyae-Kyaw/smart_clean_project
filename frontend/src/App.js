@@ -14,6 +14,7 @@ import CustomerOrders from './Components/Shop/CustomerOrders';
 import OrderHistory from './Components/Shop/OrderHistory';
 import CreateTimeSlot from './Components/Shop/CreateTimeSlot';
 import RiderRegisteration from './Components/Shop/RiderRegisteration';
+import RiderEditDelete from './Components/Shop/RiderEditDelete';
 function App() {
   return (
     <div>
@@ -31,6 +32,7 @@ function App() {
           <Route path="shop/past/order" element={<OrderHistory/>} />
           <Route path="shop/create/timeslots" element={<CreateTimeSlot/>} />
           <Route path="shop/create/rider" element={<RiderRegisteration/>} />
+          <Route path="shop/riderDetails" element={<RiderEditDelete/>} />
         </Routes>
       </BrowserRouter>
     </div>
