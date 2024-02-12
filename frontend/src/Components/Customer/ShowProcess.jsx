@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function ShowProcess() {
   return (
-    <div className='iphoneframe'>
         <div className='App'>
             <div className='topbar'>
                 <h1 className='toplabel'>Smart and Clean</h1>
@@ -10,7 +9,5 @@ export default function ShowProcess() {
         
          <h1>We are in the process of .......</h1>
         </div>
-       
-    </div>
   )
 }
