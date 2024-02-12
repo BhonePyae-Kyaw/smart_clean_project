@@ -57,6 +57,7 @@ function CustomerHome() {
      <div className="btn">
       < Link to="/customer/showHistory"><button className="history" >View History</button></Link>
       </div>
+    </div>
   );
 }
 
