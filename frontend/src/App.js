@@ -5,6 +5,9 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Nav from './Components/Nav';
 
 import CusteomerHome from './Components/Customer/CusteomerHome';
+import CustomerHistory from './Components/Customer/CustomerHistory';
+import ChooseTimeSlot from './Components/Customer/ChooseTimeSlot';
+import ShowProcess from './Components/Customer/ShowProcess';
 
 import ShopHome from './Components/Shop/ShopHome';
 import CustomerOrders from './Components/Shop/CustomerOrders';
@@ -19,6 +22,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Nav />} />
           <Route path="/customer/home" element={<CusteomerHome />} />
+          <Route path="/customer/showHistory" element={<CustomerHistory/>} />
+          <Route path="/customer/chooseTimeSlot" element={<ChooseTimeSlot/>} />
+          <Route path="/customer/showProcess" element={<ShowProcess/>} />
+
 
           <Route path="/shop/home" element={<ShopHome />} />
           <Route path="/shop/customerOrder" element={<CustomerOrders />} />
