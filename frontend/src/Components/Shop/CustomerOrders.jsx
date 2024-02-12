@@ -35,7 +35,7 @@ export default function CustomerOrders() {
           "phone_number": "0651086418",
           "location": "Samut Prakan",
           "order_time": "2024-02-11T04:36:23.000Z",
-          "rider": "2024-02-11T04:36:23.000Z",
+          "rider": "",
           "status" : "just ordered"
       },
       {
@@ -44,7 +44,7 @@ export default function CustomerOrders() {
           "phone_number": "0651086414",
           "location": "Samut Prakan",
           "order_time": "2024-02-11T04:36:23.000Z",
-          "rider": "2024-02-11T04:36:23.000Z",
+          "rider": "",
           "status" : "just ordered"
       },
       {
