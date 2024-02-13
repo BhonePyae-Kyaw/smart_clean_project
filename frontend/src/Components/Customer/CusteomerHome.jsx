@@ -1,7 +1,8 @@
-import calendar from "./cal.jpeg";
-import avator from "./profile.png";
-import tracker from "./delivery.jpeg";
+import calendar from "./photos/cal.jpeg";
+import avator from "./photos/profile.png";
+import tracker from "./photos/delivery.jpeg";
 import './CustomerHome.css';
+import CustomerHeader from '../Common/CustomerHeader';
 import React, { useRef } from 'react';
 import { Link } from "react-router-dom";
 
@@ -20,33 +21,30 @@ function CustomerHome() {
   };
  
   return (
-    <div className="App">
+    <div className="cus-home-div">
+      <CustomerHeader/>
        
-        <div className="topbar">
-          <h1 className="toplabel">Smart and Clean</h1>
+        <div className="cus-userbar-show">
+          <div className="cus-space"></div>
+          <h2 className="cus-username">Welcome bryan </h2>
+          <img className="cus-user-avator-img" src={avator} alt="avator"/>
         </div>
        
-        <div className="userbar">
-          <div className="space"></div>
-          <h2 className="username">Welcome bryan </h2>
-          <img className="avator" src={avator} alt="avator"/>
-        </div>
-       
-    <div className="container"  ref={containerRef}
+    <div className="cus-scroll-container"  ref={containerRef}
     onWheel={handleWheel}>
  
-      <div className="scroll">
+      <div className="cus-scroll-fun">
        
-        <div className="calendar-container">
-          <img className="cal" src={calendar} alt="cal"/>
-          <Link to="/customer/chooseTimeSlot"> <h3 className="h3link">Book an order</h3></Link>
-            <p>Choose available Time slot to get the service.</p>
+        <div className="cus-bt-container">
+          <img className="cal" src={calendar} alt="calendar"/>
+          <Link to="/customer/chooseTimeSlot"> <h3 className="cus-link">Book an order</h3></Link>
+            <p className="cus-order-p">Choose available Time slot to get the service.</p>
         </div>
  
-        <div className="calendar-container">
+        <div className="cus-bt-container">
           <img className="cal" src={tracker} alt="tracking"/>
-          <Link to="/customer/showProcess"><h3 className="h3link">Track your order</h3></Link>
-           <p> You can see when the rider will come to pick up ,
+          <Link to="/customer/showProcess"><h3 className="cus-link">Track your order</h3></Link>
+           <p className="cus-track-p"> You can see when the rider will come to pick up ,
             <br></br>return and when the shop will do your laundry.</p>
         </div>
  
@@ -54,8 +52,8 @@ function CustomerHome() {
  
     </div>
  
-     <div className="btn">
-      < Link to="/customer/showHistory"><button className="history" >View History</button></Link>
+     <div className="cus-btn-div">
+      < Link to="/customer/showHistory"><button className="cus-btn-history" >View History</button></Link>
       </div>
     </div>
   );
