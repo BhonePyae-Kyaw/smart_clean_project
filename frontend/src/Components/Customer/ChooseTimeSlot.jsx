@@ -1,6 +1,7 @@
 import React from 'react'
 import CustomerHeader from '../Common/CustomerHeader';
 import './ChooseTimeSlot.css';
+import {Link} from 'react-router-dom';
 export default function chooseTimeSlot() {
 
   
@@ -66,7 +67,7 @@ export default function chooseTimeSlot() {
         </div>
 
         <div className='cus-confirm-div'>
-        <button className='cus-btn-confirm'>Confirm</button>
+         <Link to="/customer/chooseItems"> <button className='cus-btn-confirm'>Confirm</button></Link>
         </div>
      </div>
     </div>

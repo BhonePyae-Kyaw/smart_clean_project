@@ -1,0 +1,47 @@
+.cus-chooseitems-label{
+    text-align: center;
+}
+.cus-itemstable-div{
+    display: flex;
+    justify-content: space-around;
+}
+.cus-items-table{
+    border-spacing: 13px;
+    width: 100%;
+}
+.cus-items{
+    background-color: #DBEAFE;
+    padding: 18px;
+    border-radius: 80%;
+    height: 80px;
+    text-align: center;
+}
+.cus-count{
+    margin:10px;
+    padding-left: 20px;
+    margin-top: 0px;
+}
+.cus-items-label{
+    margin:10px;
+    padding-left: 20px;
+    font-size: larger;
+    text-align:justify;
+}
+.cus-btn-proceed-div{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    height: 50px;
+}
+.cus-btn-proceed{
+    background-color: #AAC4F9;
+    color: black;
+    height: 46px;
+    width: 220px;
+    font-size: x-large;
+    border-radius: 20px;
+}
+.cus-trouser,.cus-jacket,.cus-shirt{
+    height: 50px;
+    width: 50px;
+}

@@ -18,6 +18,9 @@
     justify-content: center;
     margin: 43px; 
 }
+.cus-pro-circle1:hover,.cus-pro-circle2:hover, .cus-pro-circle3:hover, .cus-pro-circle4:hover {
+    background-color: #5EEAD4;
+}
 .p-num-row1,.p-num-row2{
     display:flex;
 }

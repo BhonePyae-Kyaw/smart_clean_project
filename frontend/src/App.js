@@ -8,6 +8,7 @@ import CusteomerHome from './Components/Customer/CusteomerHome';
 import CustomerHistory from './Components/Customer/CustomerHistory';
 import ChooseTimeSlot from './Components/Customer/ChooseTimeSlot';
 import ShowProcess from './Components/Customer/ShowProcess';
+import ChooseItems from './Components/Customer/ChooseItems';
 
 import ShopHome from './Components/Shop/ShopHome';
 import CustomerOrders from './Components/Shop/CustomerOrders';
@@ -26,6 +27,7 @@ function App() {
           <Route path="/customer/showHistory" element={<CustomerHistory/>} />
           <Route path="/customer/chooseTimeSlot" element={<ChooseTimeSlot/>} />
           <Route path="/customer/showProcess" element={<ShowProcess/>} />
+          <Route path="/customer/chooseItems" element={<ChooseItems/>}/>
 
 
           <Route path="/shop/home" element={<ShopHome />} />
