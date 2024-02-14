@@ -13,13 +13,15 @@
     background-color: #DBEAFE;
     padding: 18px;
     border-radius: 80%;
-    height: 80px;
+    height: 90px;
+    width: 100px;
     text-align: center;
 }
 .cus-count{
     margin:10px;
     padding-left: 20px;
     margin-top: 0px;
+    text-align: justify;
 }
 .cus-items-label{
     margin:10px;
@@ -41,7 +43,7 @@
     font-size: x-large;
     border-radius: 20px;
 }
-.cus-trouser,.cus-jacket,.cus-shirt{
+.cus-trouser,.cus-jacket,.cus-shirt,.cus-shorts,.cus-sweater,.cus-sweatshirt{
     height: 50px;
     width: 50px;
 }
