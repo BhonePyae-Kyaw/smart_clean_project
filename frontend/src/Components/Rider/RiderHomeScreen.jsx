@@ -20,7 +20,7 @@ export default function RiderPickupButton() {
       <div className='home-btn-container'>
         <button className='home-btn'>
           <Link className='home-link' to='/Rider/RiderHomeScreen/RiderInfo'>
-            Customer Home
+            Pickup from customer
           </Link>
         </button>
         <button className='home-btn'>
