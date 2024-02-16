@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import ShopHeader from '../Common/ShopHeader'
 import './RiderRegisteration.css'
 export default function RiderRegisteration() {
+  
   return (
     <div>
       <ShopHeader />
@@ -15,8 +16,11 @@ export default function RiderRegisteration() {
         <input type='password' placeholder='Password' className='rr-input-text'/><br/>
         <input type='password' placeholder='Confirm password' className='rr-input-text'/><br/>
         <input type='text' placeholder='Phone number' className='rr-input-text'/><br/>
-        <button type='submit' className='rr-input-submit'>Register</button>
+        
       </form>
+      <button type='submit' className='rr-input-submit'>
+        <Link className="rr-input-submit-link" to="/shop/riderList">Register</Link>
+      </button>
       
     </div>
   )

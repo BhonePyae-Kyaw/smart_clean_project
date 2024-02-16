@@ -17,6 +17,14 @@ import CreateTimeSlot from './Components/Shop/CreateTimeSlot';
 import RiderRegisteration from './Components/Shop/RiderRegisteration';
 import RiderEditDelete from './Components/Shop/RiderEditDelete';
 import ShopRiderList from './Components/Shop/ShopRiderList';
+import JustOrdered from './Components/Shop/JustOrdered';
+import AvailableRiderList from './Components/Shop/AvailableRiderList';
+import SuccessfulAssign from './Components/Shop/SuccessfulAssign';
+import LaundryProcess from './Components/Shop/LaundryProcess';
+import LaundryOngoing from './Components/Shop/LaundryOngoing';
+import LaundryFinish from './Components/Shop/LaundryFinish';
+import PickUpOngoing from './Components/Shop/PickUpOngoing';
+
 import RiderPickupButton from './Components/Rider/RiderHomeScreen';
 import RiderInfo from './Components/Rider/RiderInfo';
 import PickUpDetail from './Components/Rider/PickUpDetail';
@@ -29,6 +37,7 @@ import RiderInfoReturn from './Components/Rider/RiderInfoReturn';
 import ReturnSuccess from './Components/Rider/ReturnSuccess';
 import ReportForm from './Components/Rider/ReportForm';
 import ReportSuccess from './Components/Rider/ReportSuccess';
+
 
 function App() {
   return (
@@ -51,6 +60,16 @@ function App() {
           <Route path="shop/create/rider" element={<RiderRegisteration/>} />
           <Route path="shop/riderDetails" element={<RiderEditDelete/>} />
           <Route path="shop/riderList" element={<ShopRiderList/>} />
+          <Route path="shop/justOrdered" element={<JustOrdered/>} />
+          <Route path="shop/riderList/available" element={<AvailableRiderList/>} />
+          <Route path="shop/pickup/successful" element={<SuccessfulAssign/>} />
+
+          <Route path='shop/laundry' element={<LaundryProcess/>}/>
+          <Route path='shop/laundryOngoing' element={<LaundryOngoing/>}/>
+          <Route path='shop/laundryFinish' element={<LaundryFinish/>}/>
+
+          <Route path='shop/pickUpOngoing' element={<PickUpOngoing/>}/>
+          
 
           <Route path='Rider/RiderHomeScreen' element={<RiderPickupButton />} />
           <Route
