@@ -29,6 +29,7 @@ import RiderInfoReturn from './Components/Rider/RiderInfoReturn';
 import ReturnSuccess from './Components/Rider/ReturnSuccess';
 import ReportForm from './Components/Rider/ReportForm';
 import ReportSuccess from './Components/Rider/ReportSuccess';
+
 function App() {
   return (
     <div>
@@ -41,6 +42,7 @@ function App() {
           <Route path="/customer/showProcess" element={<ShowProcess/>} />
           <Route path="/customer/chooseItems" element={<ChooseItems/>}/>
 
+          {/* <Route path="/customer/home" element={<CusteomerHome />} /> */}
 
           <Route path="/shop/home" element={<ShopHome />} />
           <Route path="/shop/customerOrder" element={<CustomerOrders />} />
@@ -49,6 +51,7 @@ function App() {
           <Route path="shop/create/rider" element={<RiderRegisteration/>} />
           <Route path="shop/riderDetails" element={<RiderEditDelete/>} />
           <Route path="shop/riderList" element={<ShopRiderList/>} />
+
           <Route path='Rider/RiderHomeScreen' element={<RiderPickupButton />} />
           <Route
             path='Rider/RiderHomeScreen/RiderProfile'
