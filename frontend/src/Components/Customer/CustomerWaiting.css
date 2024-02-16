@@ -1,0 +1,25 @@
+.cus-wait-label{
+    text-align: center;
+    font-size: x-large;
+    margin: 25px;
+}
+
+.cus-default-container{
+    background-color: #DBEAFE;
+    margin: 30px;
+    height: 100%;
+}
+
+.cus-btn-okupdate{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cus-btn-ok,.cus-btn-update{
+    background-color: #AAC4F9;
+    color: black;
+    height: 46px;
+    width: 120px;
+    font-size: large;
+    border-radius: 20px;
+}
