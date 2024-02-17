@@ -24,6 +24,9 @@ export default function ShopHome() {
                 <button className='sho-btm'>
                     <Link className='sho-btm-link' to="/shop/past/order">Order History</Link>
                 </button>
+                <button  className='sho-btm'>
+                    <Link className='sho-btm-link' to="/shop/riderList">Rider List</Link>
+                </button>
         </div>
     </>
   )

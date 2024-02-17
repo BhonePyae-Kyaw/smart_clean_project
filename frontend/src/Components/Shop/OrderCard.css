@@ -6,3 +6,8 @@
     border-radius: 20px;
     
 }
+
+.oc-status{
+    color: red;
+    font-size: 18px;
+}
