@@ -1,14 +1,16 @@
-.lf_img{
-    width: 360px;
+.pw-img{
+    width: 300px;
+    border-radius: 20px;
 }
-.lf_container{
+.pw-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 30px;
 }
-.lf_btn{
+
+.pw-btn{
     width: 340px;
     height: 48px;
     border-radius: 10px;
@@ -17,8 +19,8 @@
     margin: 20px;
 
 }
-.lf_link{
+/* .sa-link{
     all: unset;
     font-size: 16px;
     color: #313131;
-}
+} */

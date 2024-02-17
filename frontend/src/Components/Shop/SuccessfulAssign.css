@@ -1,14 +1,24 @@
-.lf_img{
-    width: 360px;
+.sa-assign-img{
+    width: 300px;
+    border-radius: 50%;
 }
-.lf_container{
+.sa-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 30px;
 }
-.lf_btn{
+.sa-prompt{ 
+    background-color: #AAC4F9;
+    width: 90%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.sa-btn{
     width: 340px;
     height: 48px;
     border-radius: 10px;
@@ -17,7 +27,7 @@
     margin: 20px;
 
 }
-.lf_link{
+.sa-link{
     all: unset;
     font-size: 16px;
     color: #313131;

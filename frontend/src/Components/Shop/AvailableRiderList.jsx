@@ -12,6 +12,7 @@ export default function AvailableRiderList() {
   return (
     <>
         <ShopHeader />
+        <h1>Available Riders</h1>
         {riders.map(rider => {
           return <AvailableRiderCard  rider={rider} />;
       })}

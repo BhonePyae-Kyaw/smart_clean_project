@@ -71,6 +71,7 @@ export default function LaundryProcess() {
   return (
     <div>
         <ShopHeader />
+        <h1 >Orders in laundry stage</h1>
         {orders.map(order => {
           if (order.status === "laundry ongoing" || order.status === "laundry finish") {
             return <OrderCard  orders={order} />;

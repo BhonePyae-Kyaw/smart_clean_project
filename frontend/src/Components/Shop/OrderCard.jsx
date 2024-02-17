@@ -9,7 +9,7 @@ export default function OrderCard({orders, status}) {
         <p>Customer name: {orders.name}</p>
         <p>Phone Number: {orders.phone_number}</p>
         <p>Location: {orders.location}</p>
-        <p>Status: {orders.status}</p>
+        <p className='oc-status'>Status: {orders.status}</p>
         <p>Rider: {orders.rider}</p>
       </div>
     );
