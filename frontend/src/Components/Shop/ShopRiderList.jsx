@@ -1,10 +1,10 @@
 import React from 'react'
 import ShopHeader from '../Common/ShopHeader'
-
+import RiderCard from './RiderCard'
 export default function ShopRiderList() {
   const riders = [
     {
-        "rider_name": "Elliot",
+        "name": "Elliot",
         "phone_number": "0651086431",
         "email": "elliot@gmail.com",
         
@@ -18,6 +18,9 @@ export default function ShopRiderList() {
   return (
     <>
         <ShopHeader />
+        {riders.map(rider => {
+          return <RiderCard  rider={rider} />;
+      })}
         
     </>
   )

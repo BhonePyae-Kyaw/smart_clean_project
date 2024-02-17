@@ -5,6 +5,15 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Nav from './Components/Nav';
 
 import CusteomerHome from './Components/Customer/CusteomerHome';
+import CustomerHistory from './Components/Customer/CustomerHistory';
+import ChooseTimeSlot from './Components/Customer/ChooseTimeSlot';
+import ShowProcess from './Components/Customer/ShowProcess';
+import ChooseItems from './Components/Customer/ChooseItems';
+import Receipt from './Components/Customer/Receipt';
+import CustomerOrderConfirmation from './Components/Customer/CustomerOrderConfirmation';
+import CustomerWaiting from './Components/Customer/CustomerWaiting';
+import FinalReceipt from './Components/Customer/FinalReceipt';
+
 
 import ShopHome from './Components/Shop/ShopHome';
 import CustomerOrders from './Components/Shop/CustomerOrders';
@@ -50,6 +59,18 @@ function App() {
         <Routes>
           <Route path="/" element={<Nav />} />
           <Route path="/customer/home" element={<CusteomerHome />} />
+          <Route path="/customer/showHistory" element={<CustomerHistory/>} />
+          <Route path="/customer/chooseTimeSlot" element={<ChooseTimeSlot/>} />
+          <Route path="/customer/showProcess" element={<ShowProcess/>} />
+          <Route path="/customer/chooseItems" element={<ChooseItems/>}/>
+          <Route path="/customer/Receipt" element={<Receipt/>}/>
+          <Route path="/customer/orderConfirmation" element={<CustomerOrderConfirmation/>}/>
+          <Route path="/customer/finalreceipt" element={<FinalReceipt/>}/>
+          <Route path="/customer/pickingup" element={<CustomerWaiting/>}/>
+          
+
+
+          {/* <Route path="/customer/home" element={<CusteomerHome />} /> */}
 
           <Route path="/shop/home" element={<ShopHome />} />
           <Route path="/shop/customerOrder" element={<CustomerOrders />} />
@@ -58,6 +79,7 @@ function App() {
           <Route path="shop/create/rider" element={<RiderRegisteration/>} />
           <Route path="shop/riderDetails" element={<RiderEditDelete/>} />
           <Route path="shop/riderList" element={<ShopRiderList/>} />
+
 
           /*pick up*/
           <Route path="shop/customerOrder/:id" element={<JustOrdered/>} />
@@ -80,6 +102,7 @@ function App() {
 
           <Route path='Rider/RiderHomeScreen' element={<RiderPickupButton />} />
           <Route path='Rider/RiderHomeScreen/RiderProfile'element={<Profile />}/>
+
           <Route
             path='Rider/RiderHomeScreen/RiderInfo'
             element={<RiderInfo />}

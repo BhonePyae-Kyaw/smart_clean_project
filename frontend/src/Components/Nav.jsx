@@ -8,7 +8,7 @@ export default function Nav() {
       <br/>
       <Link to="/shop/home">Shop Home</Link>
       <br/>
-      <Link to="/rider/home">Rider Home</Link>
+      <Link to="Rider/RiderHomeScreen">Rider Home</Link>
     </div>
   )
 }
