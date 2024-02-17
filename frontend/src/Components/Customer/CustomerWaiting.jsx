@@ -2,12 +2,14 @@ import React from 'react';
 import CustomerHeader from '../Common/CustomerHeader';
 import "./CustomerWaiting.css"
 import { Link } from 'react-router-dom';
+import delivery from './photos/delivery.jpg';
 
 export default function CustomerWaiting(){
     return(
         <div className='cus-waiting-div'>
             <CustomerHeader/>
             <div className='cus-default-container'>
+                <img src={delivery} alt='delivery' className='cus-delipickup-img'/>
             <p className='cus-wait-label'>
                 Our rider will come pick up on appointed time.
             </p>
