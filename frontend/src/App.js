@@ -9,6 +9,11 @@ import CustomerHistory from './Components/Customer/CustomerHistory';
 import ChooseTimeSlot from './Components/Customer/ChooseTimeSlot';
 import ShowProcess from './Components/Customer/ShowProcess';
 import ChooseItems from './Components/Customer/ChooseItems';
+import Receipt from './Components/Customer/Receipt';
+import CustomerOrderConfirmation from './Components/Customer/CustomerOrderConfirmation';
+import CustomerWaiting from './Components/Customer/CustomerWaiting';
+import FinalReceipt from './Components/Customer/FinalReceipt';
+
 
 import ShopHome from './Components/Shop/ShopHome';
 import CustomerOrders from './Components/Shop/CustomerOrders';
@@ -30,6 +35,7 @@ import ReturnSuccess from './Components/Rider/ReturnSuccess';
 import ReportForm from './Components/Rider/ReportForm';
 import ReportSuccess from './Components/Rider/ReportSuccess';
 
+
 function App() {
   return (
     <div>
@@ -41,6 +47,12 @@ function App() {
           <Route path="/customer/chooseTimeSlot" element={<ChooseTimeSlot/>} />
           <Route path="/customer/showProcess" element={<ShowProcess/>} />
           <Route path="/customer/chooseItems" element={<ChooseItems/>}/>
+          <Route path="/customer/Receipt" element={<Receipt/>}/>
+          <Route path="/customer/orderConfirmation" element={<CustomerOrderConfirmation/>}/>
+          <Route path="/customer/finalreceipt" element={<FinalReceipt/>}/>
+          <Route path="/customer/pickingup" element={<CustomerWaiting/>}/>
+          
+
 
           {/* <Route path="/customer/home" element={<CusteomerHome />} /> */}
 
